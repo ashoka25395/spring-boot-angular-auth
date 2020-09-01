@@ -89,7 +89,7 @@ public class AuthController {
 		final Set<Role> roles = new HashSet<>();
 
 		if (strRoles == null) {
-			final Role userRole = this.roleRepository.save(new Role(ERole.ROLE_USER));
+			final Role userRole = this.roleRepository.save(new Role(ERole.ROLE_ADMIN));
 			roles.add(userRole);
 		}
 		user.setRoles(roles);
