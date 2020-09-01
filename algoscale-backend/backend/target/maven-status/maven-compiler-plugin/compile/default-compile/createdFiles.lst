@@ -1,0 +1,17 @@
+com\algoscale\springjwt\controllers\AuthController.class
+com\algoscale\springjwt\payload\response\JwtResponse.class
+com\algoscale\springjwt\payload\request\LoginRequest.class
+com\algoscale\springjwt\models\Role.class
+com\algoscale\springjwt\security\WebSecurityConfig.class
+com\algoscale\springjwt\payload\response\MessageResponse.class
+com\algoscale\springjwt\security\services\UserDetailsImpl.class
+com\algoscale\springjwt\models\User.class
+com\algoscale\springjwt\security\jwt\AuthEntryPointJwt.class
+com\algoscale\springjwt\models\ERole.class
+com\algoscale\springjwt\SpringBootSecurityJwtApplication.class
+com\algoscale\springjwt\repository\RoleRepository.class
+com\algoscale\springjwt\payload\request\SignupRequest.class
+com\algoscale\springjwt\repository\UserRepository.class
+com\algoscale\springjwt\security\services\UserDetailsServiceImpl.class
+com\algoscale\springjwt\security\jwt\AuthTokenFilter.class
+com\algoscale\springjwt\security\jwt\JwtUtils.class

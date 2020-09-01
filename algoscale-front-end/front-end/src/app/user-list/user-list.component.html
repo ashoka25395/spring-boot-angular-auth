@@ -1,0 +1,21 @@
+<div class="col-md-6 user-container">
+    <h2 style="margin: auto"> User Details</h2>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of usersList">
+        <td class="hidden">{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td><button class="btn btn-success" (click)="deleteUser(user.id)"> Delete</button>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
