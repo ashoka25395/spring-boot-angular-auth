@@ -18,10 +18,7 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private router:Router,private tokenStorage: TokenStorageService) { }
 
   ngOnInit() {
-    if (this.tokenStorage.getToken()) {
-      this.isLoggedIn = true;
-      this.roles = this.tokenStorage.getUser().roles;
-    }
+    
   }
 
   onSubmit() {
@@ -34,7 +31,6 @@ export class LoginComponent implements OnInit {
         this.isLoggedIn = true;
         this.roles = this.tokenStorage.getUser().roles;
         this.router.navigate(['userlist']);
-         this.reloadPage();
       },
       err => {
         this.errorMessage = err.error.message;
@@ -44,7 +40,4 @@ export class LoginComponent implements OnInit {
     );
   }
 
-  reloadPage() {
-    window.location.reload();
-  }
 }
